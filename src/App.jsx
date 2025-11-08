@@ -2,9 +2,11 @@
 import React from "react";
 import { ThemeProvider } from "./Context/ThemeContext";
 import ThemeToggle from "./Component/ThemeToggle";
-
+import Loginform from "./Component/Loginform";
+import Profile from "./Component/Profile";
 function App() {
   return (
+    
     <ThemeProvider>
       <div style={{ padding: "2rem" }}>
         <h1>Hello Context 👋</h1>
@@ -23,6 +25,8 @@ function App() {
           <p>This box color changes based on your theme!</p>
         </div>
       </div>
+      <Loginform />
+      <Profile />
     </ThemeProvider>
   );
 }
